@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		C9AC9CDD1DBADE4400F28864 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AC9CDC1DBADE4400F28864 /* AppDelegate.swift */; };
-		C9AC9CDF1DBADE4400F28864 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AC9CDE1DBADE4400F28864 /* ViewController.swift */; };
 		C9AC9CE21DBADE4400F28864 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9AC9CE01DBADE4400F28864 /* Main.storyboard */; };
 		C9AC9CE41DBADE4400F28864 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9AC9CE31DBADE4400F28864 /* Assets.xcassets */; };
 		C9AC9CE71DBADE4400F28864 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9AC9CE51DBADE4400F28864 /* LaunchScreen.storyboard */; };
 		C9AC9CF21DBADE4400F28864 /* SimpleCalciOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AC9CF11DBADE4400F28864 /* SimpleCalciOSTests.swift */; };
 		C9AC9CFD1DBADE4400F28864 /* SimpleCalciOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AC9CFC1DBADE4400F28864 /* SimpleCalciOSUITests.swift */; };
+		C9AC9D0B1DBD241E00F28864 /* CalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AC9D0A1DBD241E00F28864 /* CalcViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		C9AC9CD91DBADE4400F28864 /* SimpleCalciOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleCalciOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9AC9CDC1DBADE4400F28864 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C9AC9CDE1DBADE4400F28864 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C9AC9CE11DBADE4400F28864 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9AC9CE31DBADE4400F28864 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9AC9CE61DBADE4400F28864 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		C9AC9CF81DBADE4400F28864 /* SimpleCalciOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleCalciOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9AC9CFC1DBADE4400F28864 /* SimpleCalciOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCalciOSUITests.swift; sourceTree = "<group>"; };
 		C9AC9CFE1DBADE4400F28864 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9AC9D0A1DBD241E00F28864 /* CalcViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalcViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				C9AC9CDC1DBADE4400F28864 /* AppDelegate.swift */,
-				C9AC9CDE1DBADE4400F28864 /* ViewController.swift */,
+				C9AC9D0A1DBD241E00F28864 /* CalcViewController.swift */,
 				C9AC9CE01DBADE4400F28864 /* Main.storyboard */,
 				C9AC9CE31DBADE4400F28864 /* Assets.xcassets */,
 				C9AC9CE51DBADE4400F28864 /* LaunchScreen.storyboard */,
@@ -262,8 +262,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9AC9CDF1DBADE4400F28864 /* ViewController.swift in Sources */,
 				C9AC9CDD1DBADE4400F28864 /* AppDelegate.swift in Sources */,
+				C9AC9D0B1DBD241E00F28864 /* CalcViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
