@@ -266,6 +266,9 @@
                         </subviews>
                         <color key="backgroundColor" red="0.82393539507772018" green="0.82393539507772018" blue="0.82393539507772018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="displayLabel" destination="Vt8-tE-Xet" id="NIC-AZ-yxm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
