@@ -162,6 +162,7 @@ class CalcViewController: UIViewController {
     }
 
     @IBAction func count(_ sender: AnyObject) {
+        allNumbers.append(self.sum())
         self.changeLabel(allNumbers.count)
     }
     
