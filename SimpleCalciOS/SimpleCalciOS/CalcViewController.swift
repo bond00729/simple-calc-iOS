@@ -115,43 +115,38 @@ class CalcViewController: UIViewController {
             total += numbers[index] * self.pow(10, numbers.count - (1 + index))
             index += 1
         }
+        numbers.removeAll()
         return total;
     }
 
     @IBAction func add(_ sender: AnyObject) {
         self.operand = "+"
         self.left = self.sum()
-        numbers.removeAll()
     }
     
     @IBAction func subtract(_ sender: AnyObject) {
         self.operand = "-"
         self.left = self.sum()
-        numbers.removeAll()
     }
     
     @IBAction func multiply(_ sender: AnyObject) {
         self.operand = "*"
         self.left = self.sum()
-        numbers.removeAll()
     }
     
     @IBAction func divide(_ sender: AnyObject) {
         self.operand = "/"
         self.left = self.sum()
-        numbers.removeAll()
     }
     
     @IBAction func mod(_ sender: AnyObject) {
         self.operand = "%"
         self.left = self.sum()
-        numbers.removeAll()
     }
     
     @IBAction func equal(_ sender: AnyObject) {
         self.right = self.sum()
         if self.operand == "+" {
-            print("\(left) + \(right)")
             self.changeLabel(left + right)
         } else if self.operand == "-" {
             self.changeLabel(left - right)
@@ -162,7 +157,6 @@ class CalcViewController: UIViewController {
         } else if self.operand == "%" {
             self.changeLabel(left % right)
         }
-        numbers.removeAll()
         allNumbers.append(left)
         allNumbers.append(right)
     }
@@ -180,7 +174,12 @@ class CalcViewController: UIViewController {
     }
     
     @IBAction func factorial(_ sender: AnyObject) {
-        
+        left = self.sum()
+        var total = 1
+        for i in 1...left {
+            total = total * i
+        }
+        self.changeLabel(total)
     }
     
     @IBAction func clear(_ sender: AnyObject) {
